@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script 
+  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+    $(function(){
+	   // $('#d2 .c1').val('nihao');
+	})
+	 function onlogin(){
+	    alert('提交');
+      $('#d1').load('http://localhost/');
+		return false;
+	 }
+  </script>
+ </head>
+ <body>
+ <div id='d1' style='border:1px solid red;width:600px;'>
+   <input type='text' class='c1'/><br/>
+   <input type='text'/><br/>
+  </div>
+  <div>
+   <div id='d2'>
+    <form action='http://localhost/users/login' method='post'
+	onSubmit = 'return onlogin();'>
+	<table border='1' align='center'>
+
+   <table  border='1' align='center'>
+       <tr>
+            <td align='right'>email:</td>
+            <td><input type="text" name="email"></td>
+       </tr>
+       <tr>
+            <td align='right'>密码:</td>
+            <td><input type="text" name="email"></td>
+       </tr>
+       <tr>
+            <td align='center' colspan='2'>
+            <td><input type="submit" value='登录'>
+            </td>
+       </tr>
+   </div>
+  </div>
+ </body>
+</html>
